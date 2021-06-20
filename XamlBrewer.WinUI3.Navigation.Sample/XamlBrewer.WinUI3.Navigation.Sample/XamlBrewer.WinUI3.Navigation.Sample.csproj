@@ -1,0 +1,139 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>XamlBrewer.WinUI3.Navigation.Sample</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x86;x64;arm64</Platforms>
+    <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\About.png" />
+    <None Remove="Assets\Antwerp.jpg" />
+    <None Remove="Assets\Background.jpg" />
+    <None Remove="Assets\Beer.png" />
+    <None Remove="Assets\BelgianTrappists.jpg" />
+    <None Remove="Assets\DeliriumCafe.jpg" />
+    <None Remove="Assets\Festivals.png" />
+    <None Remove="Assets\FormulaOne.png" />
+    <None Remove="Assets\Francorchamps.jpg" />
+    <None Remove="Assets\Home.png" />
+    <None Remove="Assets\MusicFestival.jpg" />
+    <None Remove="Assets\RockWerchter.jpg" />
+    <None Remove="Assets\RockWerchter.png" />
+    <None Remove="Assets\Tomorrowland.jpg" />
+    <None Remove="Assets\Tomorrowland.png" />
+    <None Remove="Shell.xaml" />
+    <None Remove="Views\AboutPage.xaml" />
+    <None Remove="Views\BeerDetailsPage.xaml" />
+    <None Remove="Views\BeerPage.xaml" />
+    <None Remove="Views\FestivalDetailsPage.xaml" />
+    <None Remove="Views\FestivalPage.xaml" />
+    <None Remove="Views\FormulaOnePage.xaml" />
+    <None Remove="Views\HomePage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ProjectReunion" Version="0.5.7" />
+    <PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.5.7" />
+    <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.5.7" />
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Assets\About.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\Background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\Beer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\Antwerp.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\BelgianTrappists.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\DeliriumCafe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\Festivals.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\FormulaOne.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\Francorchamps.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\Home.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\MusicFestival.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\RockWerchter.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\RockWerchter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\Tomorrowland.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\Tomorrowland.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Views\BeerDetailsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Views\FestivalDetailsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Views\FestivalPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Views\BeerPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Views\FormulaOnePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Views\AboutPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Shell.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Views\HomePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>

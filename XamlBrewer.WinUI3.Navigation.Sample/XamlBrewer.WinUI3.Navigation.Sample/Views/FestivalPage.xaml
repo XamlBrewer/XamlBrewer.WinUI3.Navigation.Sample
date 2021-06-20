@@ -1,0 +1,25 @@
+﻿<Page x:Class="XamlBrewer.WinUI3.Navigation.Sample.Views.FestivalPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:XamlBrewer.WinUI3.Navigation.Sample.Views"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Background="Transparent">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Image  Source="../Assets/MusicFestival.jpg" />
+        <TextBlock Grid.Row="1"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top"
+                   Margin="40 40 40 80">
+            <Run>Belgium hosts too many big music festivals. To ensure that it never has to organize it, the kingdom only sends mediocre candidates to the yearly European Song Contest.</Run>
+            <Run>The strategy only failed once.</Run>
+            <LineBreak /><LineBreak />
+            <Run Text="For more into on the world's largest dance music festival, see " /><Hyperlink Click="Hyperlink_Click">Tomorrowland</Hyperlink><Run Text=", if you're more into rock music, then " /><Hyperlink Click="Hyperlink1_Click">Rock Werchter</Hyperlink><Run Text=" might be your thing." /></TextBlock>
+    </Grid>
+</Page>

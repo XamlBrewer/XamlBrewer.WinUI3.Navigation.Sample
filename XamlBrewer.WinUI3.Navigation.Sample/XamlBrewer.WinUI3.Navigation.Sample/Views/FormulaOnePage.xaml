@@ -1,0 +1,26 @@
+﻿<Page x:Class="XamlBrewer.WinUI3.Navigation.Sample.Views.FormulaOnePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:XamlBrewer.WinUI3.Navigation.Sample.Views"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Background="Transparent">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Image  Source="../Assets/Francorchamps.jpg" />
+        <TextBlock Grid.Row="1"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top"
+                   Margin="40 40 40 80">
+            <Run>Inspired by the ancient Nazca civilisation and to scare away Klingons, Belgium has the only Formula 1 circuit that is shaped like a Star Trek phaser.</Run>
+            <Run>Thanks to this, the kingdom never has never suffered an alien attack.</Run>
+            <LineBreak /><LineBreak />
+            <Run Text="If the sound of race car engines is not your favorite kind of decibels, then please check our " /><Hyperlink Click="Hyperlink_Click">Festival Page</Hyperlink><Run>.</Run>
+        </TextBlock>
+    </Grid>
+</Page>

@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="XamlBrewer.WinUI3.Navigation.Sample.Views.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XamlBrewer.WinUI3.Navigation.Sample.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Transparent">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   TextWrapping="Wrap">
+            <Run>This WinUI 3 Desktop app demonstrates main navigation patterns based on a NavigationView control:</Run>
+            <LineBreak />
+            <Run>- Programmatically showing and hiding a menu item</Run>
+            <LineBreak />
+            <Run>- Navigating to a page from code behind</Run>
+            <LineBreak />
+            <Run>- Retrieving the current page</Run>
+            <LineBreak />
+            <Run>- Programmatically adding menu items</Run>
+            <LineBreak />
+            <Run>- ...</Run>
+            <LineBreak />
+            <LineBreak />
+            <Run>Purpose is to get to know the core classes, so we deliberately stayed away from MVVM and Dependency Injection frameworks/libraries.</Run>
+        </TextBlock>
+    </Grid>
+</Page>
