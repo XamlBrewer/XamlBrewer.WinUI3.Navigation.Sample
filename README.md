@@ -12,4 +12,8 @@ The purpose is to get to know the core classes, so we deliberately stayed away f
 
 ![Screenshot](Assets/HomePage.png?raw=true)
 
+![Screenshot](Assets/BeerPage.png?raw=true)
+
 ![Screenshot](Assets/Formula1Page.png?raw=true)
+
+
