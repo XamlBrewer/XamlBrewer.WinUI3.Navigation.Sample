@@ -7,3 +7,9 @@ This WinUI 3 Desktop app demonstrates main navigation patterns based on a Naviga
 * ...
 
 The purpose is to get to know the core classes, so we deliberately stayed away from MVVM and Dependency Injection frameworks/libraries.
+
+## Some screenshots
+
+![Screenshot](Assets/HomePage.png?raw=true)
+
+![Screenshot](Assets/Formula1Page.png?raw=true)

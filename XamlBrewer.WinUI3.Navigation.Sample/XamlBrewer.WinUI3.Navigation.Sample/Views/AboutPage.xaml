@@ -16,16 +16,16 @@
             <LineBreak />
             <Run>- Programmatically showing and hiding a menu item</Run>
             <LineBreak />
-            <Run>- Navigating to a page from code behind</Run>
+            <Run>- Navigating to a menu item from code behind</Run>
             <LineBreak />
-            <Run>- Retrieving the current page</Run>
+            <Run>- Retrieving the current menu item</Run>
             <LineBreak />
             <Run>- Programmatically adding menu items</Run>
             <LineBreak />
             <Run>- ...</Run>
             <LineBreak />
             <LineBreak />
-            <Run>Purpose is to get to know the core classes, so we deliberately stayed away from MVVM and Dependency Injection frameworks/libraries.</Run>
+            <Run>The purpose is to get to know the core classes, so we deliberately stayed away from MVVM and Dependency Injection frameworks/libraries.</Run>
         </TextBlock>
     </Grid>
 </Page>
