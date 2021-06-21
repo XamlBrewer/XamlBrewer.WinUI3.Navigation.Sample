@@ -11,17 +11,6 @@ namespace XamlBrewer.WinUI3.Navigation.Sample.Views
             this.InitializeComponent();
         }
 
-        private void Hyperlink_Click(Microsoft.UI.Xaml.Documents.Hyperlink sender, Microsoft.UI.Xaml.Documents.HyperlinkClickEventArgs args)
-        {
-            var beerItem = (Application.Current as App).Navigation.GetNavigationViewItems(this.GetType()).First();
-            beerItem.MenuItems.Add(new NavigationViewItem
-            {
-                Content = $"Round {beerItem.MenuItems.Count + 1}",
-                Tag = typeof(BeerDetailsPage).FullName
-            }
-                );
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var beerItem = (Application.Current as App).Navigation.GetNavigationViewItems(this.GetType()).First();
