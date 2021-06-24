@@ -6,6 +6,7 @@ namespace XamlBrewer.WinUI3.Navigation.Sample
     {
         public Shell()
         {
+            Title = "XAML Brewer WinUI 3 Navigation Sample";
             this.InitializeComponent();
         }
     }
