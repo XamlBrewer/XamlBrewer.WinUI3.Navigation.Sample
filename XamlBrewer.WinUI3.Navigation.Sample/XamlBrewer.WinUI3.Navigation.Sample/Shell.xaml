@@ -7,8 +7,7 @@
         mc:Ignorable="d">
     <Grid Background="Transparent">
         <Grid.Resources>
-            <AcrylicBrush x:Key="NavigationViewExpandedPaneBackground"
-                          BackgroundSource="Backdrop"
+            <AcrylicBrush x:Key="NavigationViewExpandedPaneBackground" 
                           TintColor="{StaticResource SystemChromeMediumLowColor}"
                           TintOpacity=".1"
                           FallbackColor="{StaticResource SystemChromeMediumLowColor}" />

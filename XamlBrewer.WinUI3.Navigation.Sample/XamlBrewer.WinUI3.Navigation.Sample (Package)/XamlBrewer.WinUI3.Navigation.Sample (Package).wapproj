@@ -38,7 +38,7 @@
   <PropertyGroup>
     <ProjectGuid>35eb8e7f-75c1-429b-a25a-6de5efe7f11e</ProjectGuid>
     <TargetPlatformVersion>10.0.19041.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
     <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
     <EntryPointProjectUniqueName>..\XamlBrewer.WinUI3.Navigation.Sample\XamlBrewer.WinUI3.Navigation.Sample.csproj</EntryPointProjectUniqueName>
@@ -64,10 +64,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.ProjectReunion" Version="[0.5.7]">
+    <PackageReference Include="Microsoft.ProjectReunion" Version="0.8.0">
       <IncludeAssets>build</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="[0.5.7]">
+    <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.0">
       <IncludeAssets>build</IncludeAssets>
     </PackageReference>
   </ItemGroup>
