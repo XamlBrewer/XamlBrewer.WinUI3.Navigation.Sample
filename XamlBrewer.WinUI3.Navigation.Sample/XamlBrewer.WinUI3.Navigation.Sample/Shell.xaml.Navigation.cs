@@ -25,21 +25,22 @@ namespace XamlBrewer.WinUI3.Navigation.Sample
 
         public List<NavigationViewItem> GetNavigationViewItems()
         {
+            var result = new List<NavigationViewItem>();
             var items = NavigationView.MenuItems.Select(i => (NavigationViewItem)i).ToList();
             items.AddRange(NavigationView.FooterMenuItems.Select(i => (NavigationViewItem)i));
+            result.AddRange(items);
 
-            return items;
+            foreach (NavigationViewItem mainItem in items)
+            {
+                result.AddRange(mainItem.MenuItems.Select(i => (NavigationViewItem)i));
+            }
+
+            return result;
         }
 
         public List<NavigationViewItem> GetNavigationViewItems(Type type)
         {
-            var result = new List<NavigationViewItem>();
-            result.AddRange(GetNavigationViewItems().Where(i => i.Tag.ToString() == type.FullName));
-            foreach (NavigationViewItem mainItem in NavigationView.MenuItems)
-            {
-                result.AddRange(mainItem.MenuItems.Select(i => (NavigationViewItem)i).Where(i => i.Tag.ToString() == type.FullName));
-            }
-            return result;
+            return GetNavigationViewItems().Where(i => i.Tag.ToString() == type.FullName).ToList();
         }
 
         public List<NavigationViewItem> GetNavigationViewItems(Type type, string title)
