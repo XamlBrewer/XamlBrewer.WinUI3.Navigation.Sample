@@ -15,5 +15,7 @@ namespace XamlBrewer.WinUI3.Navigation.Sample.Services
         List<NavigationViewItem> GetNavigationViewItems(Type type, string title);
 
         void SetCurrentNavigationViewItem(NavigationViewItem item);
+
+        void SetCurrentPage(Type type);
     }
 }
