@@ -58,18 +58,7 @@
     <Content Include="Images\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamlBrewer.WinUI3.Navigation.Sample\XamlBrewer.WinUI3.Navigation.Sample.csproj">
-      <SkipGetTargetFrameworkProperties>True</SkipGetTargetFrameworkProperties>
-      <PublishProfile>Properties\PublishProfiles\win10-$(Platform).pubxml</PublishProfile>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.ProjectReunion" Version="0.8.0">
-      <IncludeAssets>build</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.0">
-      <IncludeAssets>build</IncludeAssets>
-    </PackageReference>
+    <ProjectReference Include="..\XamlBrewer.WinUI3.Navigation.Sample\XamlBrewer.WinUI3.Navigation.Sample.csproj" />
   </ItemGroup>
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
 </Project>

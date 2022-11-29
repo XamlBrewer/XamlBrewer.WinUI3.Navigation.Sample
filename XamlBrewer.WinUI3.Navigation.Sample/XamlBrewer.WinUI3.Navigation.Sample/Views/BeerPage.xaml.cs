@@ -19,6 +19,8 @@ namespace XamlBrewer.WinUI3.Navigation.Sample.Views
                 Content = $"Round {beerItem.MenuItems.Count + 1}",
                 Tag = typeof(BeerDetailsPage).FullName
             });
+
+            beerItem.MenuItemsSource = beerItem.MenuItems; // There's no change propagation for 'MenuItems' (anymore).
             beerItem.IsExpanded = true;
         }
     }
